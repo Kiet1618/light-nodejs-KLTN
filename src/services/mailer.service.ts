@@ -21,8 +21,8 @@ export class MailerService {
         port: 587,
         secure: true,
         auth: {
-          user: 'dwalletlecle@gmail.com',
-          pass: 'kmkjqjdceodfonzp',
+          user: '20521505@gm.uit.edu.vn',
+          pass: 'edogawaconan45',
         }
       }
     );
@@ -32,7 +32,7 @@ export class MailerService {
     const { to, text, html, subject } = inputs;
     try {
       const res = await this.transporter.sendMail({
-        from: 'Lecle wallet <no-reply@lecle-wallet.com>',
+        from: 'UIT wallet <no-reply@lecle-wallet.com>',
         to, subject,
         ...html ? { html } : { text }
       });
